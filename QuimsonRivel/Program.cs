@@ -1,4 +1,4 @@
-﻿class ManagementSystem
+﻿class Program
 {
     static List<Student> students = new List<Student>();
 
