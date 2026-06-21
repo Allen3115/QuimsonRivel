@@ -52,7 +52,10 @@ class Program
                     for (int i = 0; i < names.Count; i++)
                     {
                         double sum = 0;
-                        foreach (double g in gradesList[i]) sum += g;
+                        for (int j = 0; j < gradesList[i].Count; j++)
+                        {
+                            sum += gradesList[i][j];
+                        }
                         double avg = sum / gradesList[i].Count;
                         Console.WriteLine($"ID: {ids[i]}, Name: {names[i]}, Average: {avg:F2}");
                     }
@@ -68,7 +71,10 @@ class Program
                     for (int i = 0; i < names.Count; i++)
                     {
                         double sum = 0;
-                        foreach (double g in gradesList[i]) sum += g;
+                        for (int j = 0; j < gradesList[i].Count; j++)
+                        {
+                            sum += gradesList[i][j];
+                        }
                         total += sum / gradesList[i].Count;
                     }
                     Console.WriteLine($"Class Average: {total / names.Count:F2}");
@@ -85,7 +91,10 @@ class Program
                     for (int i = 0; i < names.Count; i++)
                     {
                         double sum = 0;
-                        foreach (double g in gradesList[i]) sum += g;
+                        for (int j = 0; j < gradesList[i].Count; j++)
+                        {
+                            sum += gradesList[i][j];
+                        }
                         double avg = sum / gradesList[i].Count;
                         if (avg > topAvg)
                         {
